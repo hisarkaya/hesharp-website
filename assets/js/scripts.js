@@ -5,7 +5,7 @@ function toggleMenu() {
     } else {
         menu.className = 'main-menu'
     }
-}
+} 
 
 function initMap() {
     var coordinate = { lat: 51.556154, lng: -0.074844 };
