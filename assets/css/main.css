@@ -138,6 +138,60 @@ nav.toggle li:not(:first-child) {
     max-height: 36px;
 }
 
+
+/***Main content***/
+
+article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff;
+    margin: 10px 5px;
+    padding: 20px;
+}
+
+article i {
+    color: #e74c3c;
+}
+
+article p {
+    text-align: center;
+}
+
+article ul {
+    align-self: left;
+    margin: 10px 0 10px 30px;
+}
+
+article li {
+    margin: 6px;
+}
+
+.justify {
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+.inner-content h1 {
+    font-size: 22px;
+    color: #333;
+}
+
+.inner-content h2 {
+    font-size: 16px;
+    color: #888;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.inner-content p {
+    line-height: 1.8em;
+    margin-bottom: 20px;
+}
+
+
+/* Index page*/
+
 .welcome {
     text-align: center;
     padding: 20px 0 40px 0;
@@ -177,42 +231,47 @@ nav.toggle li:not(:first-child) {
     text-decoration: none;
 }
 
-#web-development,
-#wordpress {
-    color: #e74c3c;
+
+/*Services*/
+
+.packages {
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
-    align-items: center;
-    background-color: #fff;
-    margin: 10px 5px;
-    padding: 20px;
+    justify-content: center;
+    color: #fff;
 }
 
-
-/*About Page*/
-
-#aboutus {
-    display: flex;
-    flex-direction: column;
-    background-color: #fff;
-    margin: 10px 5px;
-    padding: 20px;
+.packages h2 {
+    color: #fff;
 }
 
-.inner-content h1 {
-    font-size: 22px;
-    color: #333;
+.packages i {
+    color: #fff;
 }
 
-.inner-content h2 {
-    font-size: 16px;
-    color: #888;
-    margin-top: 20px;
-    margin-bottom: 10px;
+.package-box h2 {
+    text-align: center;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #ececec;
 }
 
-.inner-content p {
-    line-height: 1.8em;
+.package-box {
+    width: 100%;
+    margin: 5px 0;
+    border-radius: 3px;
+}
+
+.basic {
+    background-color: #f1c40f;
+}
+
+.standard {
+    background-color: #c0392b;
+}
+
+.premium {
+    background-color: #2980b9;
 }
 
 
@@ -373,9 +432,23 @@ footer p {
         margin-right: auto;
         max-width: 960px;
     }
-    #web-development,
-    #wordpress {
+    article {
         width: 50%;
+    }
+    article h1 {
+        align-self: right;
+    }
+    .inner-content>article {
+        width: 100%;
+    }
+    .packages {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+    }
+    .package-box {
+        width: 33%;
     }
     .footer-container {
         display: flex;
